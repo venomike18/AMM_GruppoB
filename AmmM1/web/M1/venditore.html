@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>The BrewHouse Shop - Vendi Birre Artigianali </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Vendere, vendite, Birra Artigianale, Birre artigianali, Beer, Birra Fatta in Casa, Vendita Birre Online, Birra Artigianale Italiana, Beer-shop, Beer-Store, Migliori Birre, Vendere Bicchieri, Boccali, Birre Italiane">
+        <meta name="description" content="Vendi Online Birre Artigianali Italiane, amplia il nostro scafale online vendendo pure le tue super Birre.">
+        <meta name="author" content="Michele Medas - Mat: 65089">
+    </head>
+
+
+    <body>
+        <!-- Form di inserimento prodotti per Venditori --> 
+        <div>
+            <h1>Vendi un Prodotto</h1>
+            <form action="venditore.html" method="GET">
+                <label for="oggetto">Nome dell’oggetto:</label>
+                <input type="text" name="oggetto" id="oggetto" required>
+                <label for="immagine">URL dell'Immagine:</label>
+                <input type="url" name="immagine" id="immagine" required>
+                <label for="descrizione">Descrizione dell'oggetto:</label>
+                <textarea rows="8" cols="40" name="descrizione" 
+                          id="descrizione" required>Inserisci la descrizione del prodotto
+                </textarea>
+                <label for="prezzo">Prezzo del Prodotto (€):</label>
+                <input type="number" name="prezzo" min="0" max="1000" step="0.05" value="0" id="prezzo" required>
+                <label for="quantità">Quantità disponibile:</label>
+                <input type="number" name="quantità" min="0" max="1000" step="1" value="0" id="quantità" required>
+                <input type="submit" value="Invia">
+                <input type="reset" value="Reimposta">
+            </form>  
+        </div>
+
+
+        <!-- Menu Navigazione  -->
+        <div>
+            <h2>MENU</h2>
+            <ul>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="login.html">Effettua l'accesso</a></li>
+            </ul> 
+        </div>
+
+    </body>
+</html>
