@@ -8,14 +8,13 @@ and open the template in the editor.
     Author     : medas
 */
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
-@import url('https://fonts.googleapis.com/css?family=sanchez');
 
 /* Sfondo e impostazioni del body */
 body{
     background-image: url("img/7.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-family: 'sanchez', 'serif', 'arial';
+    font-family: 'serif', 'arial';
     color: #1a0000;
     text-align: left;
 }
