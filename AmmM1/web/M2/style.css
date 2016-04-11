@@ -1,0 +1,442 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6-apr-2016, 12.38.15
+    Author     : medas
+*/
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=sanchez');
+
+/* Sfondo e impostazioni del body */
+body{
+    background-image: url("img/7.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'sanchez', 'serif', 'arial';
+    color: #1a0000;
+    text-align: left;
+}
+
+
+/* Proprietà Menu orizzontale sopra l'header */
+nav{
+    position: inherit;
+    margin-top: 0;
+    margin-left: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+    border-top-left-radius : 5px;
+    border-top-right-radius : 5px;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #222222;
+    border-radius: 5px;
+}
+
+.currentpage {
+    background-color: #222222;
+    border-radius: 5px;
+}
+
+/* Proprietà contenitore del corpo della pagina */
+#page{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    box-shadow: 0 40px 90px rgba(0,0,0,1);
+    background-image: url('img/sfondo-page.png');
+    border-radius: 7px;
+    border: 1px solid #222222; 
+    margin-bottom: 50px;
+}
+
+/* Proprietà dell'header, compreso il logo */
+header{
+    max-width: 100%;
+    margin-top: -1px;
+    background-image: url('img/sfondo_1.png');
+    background-position: top;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+/* Proprietà della sidebar a sinistra del content */
+#sidebar {
+    float: left;
+    padding-left: 4px; 
+    margin-top: 30px;
+    margin-left: 15px;
+    background-size: 100%;
+}
+
+/* Bottoni Social Network sulla sidebar */
+#share-buttons img {
+    width: 50px;
+    padding: 10px;
+    display: inline;
+}
+
+/* Proprietà del contenuto della pagina */
+#content {
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: #FFFFFF;
+    padding: 4%;
+    padding-top: 2%;
+    border-radius: 5px;  
+    border: 1px solid #C1C1C1;
+}
+
+/* Proprietà del footer */
+#footer {
+    margin: 2%;
+    background-color: #F1F1F1;
+    padding: 4%;
+    border-radius: 5px;  
+    border: 1px solid #C1C1C1;
+    text-align: center;
+}
+
+/* Proprietà degli Headings H1, H2, H3 */
+h1 {
+    font-family: 'Alfa Slab One', 'sans-serif', 'Arial';
+    color: #1a0000;
+    margin: 0px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    text-shadow: 2px 2px #CDCBBD;
+    text-align: center;
+}
+h2{
+    font-family: 'Alfa Slab One', 'sans-serif', 'Arial';
+    color: #1a0000;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-shadow: 2px 2px #CDCBBD;
+}
+h3{
+    font-family: 'Alfa Slab One', 'sans-serif', 'Arial';
+    color: #1a0000;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-shadow: 2px 2px #CDCBBD;
+}
+
+
+/* Stile dei link */
+a:visited, a:link{
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Proprietà della tabella della pagina cliente.html */
+table {
+    text-align: center;
+    word-wrap: break-word;
+    table-layout: fixed;
+    padding: 1px;
+    margin-top: 2%;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr.intestazione{
+    background-color: #3C3024;
+    color: #FFFFFF;
+}
+tr.pari{
+    background: #EEEEEE;
+}
+tr.dispari{
+    background: #DDDDDD;
+}
+
+
+
+/*Proprietà Form inserimento testo */
+input{
+    margin: 8px 0;
+    border: 2px solid #3C3024;
+    border-radius: 5px; 
+    background: #F5F5F5;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+/*Proprietà del bottone submit */
+input[type=submit] {
+    width: 100%;
+    border:0;
+    background: #3C3024;
+    color: #FFFFFF;
+    display: block;
+    border-radius: 5px; 
+}
+
+/*Proprietà del bottone reset */
+input[type=reset]{
+    width: 100%;
+    border:0;
+    background: #3C3024;
+    color: #FFFFFF;
+    display: block;
+    border-radius: 5px;
+}
+
+/*Proprietà dell'area per inserire testo in venditore.html */
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: #F5F5F5;
+    resize: none;
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid #3C3024;
+    border-radius: 5px;
+}
+
+/* Modifiche di alcune proprietà del form */
+fieldset{
+    border: 2px solid #3C3024;
+    border-radius: 5px; 
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;   
+    font-size: 16px;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1024px) {    
+    /* imposto dimensione font del body */
+    body{
+        font-size: 14px;
+    }
+
+    /* imposto altezza e largehzza della pagina */
+    #page{
+        height: 90%;
+        width: 1000px;
+    }
+
+    /* imposto altezza dell'header per corretta visualizzazione logo */
+    header{
+        height: 220px;
+    }
+
+    /* imposto larghezza e altezza della sidebar */
+    #sidebar {
+        width: 190px;
+        height: 570px;
+    }
+
+    /* imposto dimensione font e margini del menu orizzontale sopra l'header */
+    nav li {
+        font-size: 15px;
+        margin-left: 35px;  
+        margin-right: 35px;
+    }
+
+    /* imposto spaziatura del menu orizzontale sopra l'header */
+    nav li a {
+        padding: 11px 14px;
+    }
+
+    /* imposto dimensioni dei bottoni sulla sidebar social */
+    #share-buttons img {
+        width: 50px;
+        padding: 10px;
+    }
+
+    /* imposto margine del contenuto di tutte le pagine */
+    #content {
+        margin-left: 215px;
+
+    }
+
+    /* imposto parametri di spaziatura alle righe della tabella */
+    td,th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* modifico dimensioni campi imput del form */
+    input{
+        padding: 15px 25px;
+    }
+}
+
+
+
+
+
+
+/* modifico tutti le sezioni delle pagine per rendere il sito responsive */
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+    /* modifico dimensione font del body */
+    body{
+        font-size: 12px;
+    }
+
+    /* modifico altezza e largehzza della pagina */
+    #page {
+        height: 90%;
+        width: 600px;
+    }
+
+    /* modifico altezza dell'header per corretta visualizzazione logo */
+    header {
+        height: 135px;
+    }
+
+    /* modifico larghezza e altezza della sidebar */
+    #sidebar {
+        width: 130px;
+        height: 470px; 
+    }
+
+    /* modifico dimensione font e margini del menu orizzontale sopra l'header */
+    nav li {
+        font-size: 12px;
+        margin-left: 25px;  
+        margin-right: 25px;
+    }
+
+    /* modifico spaziatura del menu orizzontale sopra l'header */
+    nav li a {
+        padding: 9px 12px;
+    }
+
+    /* modifico dimensioni dei bottoni sulla sidebar social */
+    #share-buttons img {
+        width: 40px;
+        padding: 7px;
+    }
+
+    /* modifico margine del contenuto di tutte le pagine */
+    #content {
+        margin-left: 150px;       
+    }
+
+    /* modifico parametri di spaziatura alle righe della tabella */
+    td,th{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* modifico dimensioni campi imput del form */
+    input{
+        padding: 10px 20px;
+    }
+}
+
+/* modifico nuovamente tutti le sezioni delle pagine per rendere il sito responsive */
+@media only screen and (max-width: 600px){
+
+    /* modifico dimensione font del body */
+    body{
+        font-size: 10px;
+    }
+
+    /* modifico altezza e largehzza della pagina */
+    #page {
+        height: 50%;
+        width: 350px;
+    }
+
+    /* modifico altezza dell'header per corretta visualizzazione logo */
+    header {
+        height: 80px;
+    }
+
+    /* cancello la sidebar per visualizzazione mobile */ 
+    #sidebar {
+        display: none; 
+    }
+
+    /* modifico dimensione font e margini del menu orizzontale sopra l'header */
+    nav li {
+        font-size: 10px;
+        margin-left: 2px;  
+        margin-right: 2px;
+    }
+
+    /* modifico spaziatura del menu orizzontale sopra l'header */
+    nav li a {
+        padding: 5px 8px;
+    }
+
+    /* modifico dimensioni dei bottoni sulla sidebar social */
+    #share-buttons img {
+        width: 40px;
+        padding: 7px;
+    }
+
+    /* modifico margini del contenuto di tutte le pagine */
+    #content {
+        margin-left: 10px; 
+        margin-top: 2%;      
+    }
+
+    /* modifico parametri di spaziatura alle righe della tabella */
+    td,th{
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    /* modifico dimensioni campi imput del form */
+    input{
+        padding: 8px 16px;
+    }
+} 
