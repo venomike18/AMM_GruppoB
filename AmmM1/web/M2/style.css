@@ -390,9 +390,9 @@ fieldset{
 
     /* modifico altezza e largehzza della pagina */
     #page {
-        margin-right: 2px;
-        margin-left: 2px;
-        border-radius: 2px;
+        margin-right: 1px;
+        margin-left: 1px;
+        border-radius: 0;
         height: 50%;
         width: 350px;
     }
