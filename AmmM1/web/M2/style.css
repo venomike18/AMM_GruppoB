@@ -21,11 +21,9 @@ body{
 
 /* Proprietà contenitore del corpo della pagina */
 #page{
-    margin-right: auto;
     margin-top: 60px;
     box-shadow: 0 40px 90px rgba(0,0,0,1);
     background-image: url('img/sfondo-pagina.png');
-    border-radius: 7px;
     border: 1px solid #222222; 
     margin-bottom: 50px;
 }
@@ -256,7 +254,9 @@ fieldset{
 
     /* imposto altezza e largehzza della pagina */
     #page{
+        margin-right: auto;
         margin-left: auto;
+        border-radius: 7px;
         height: 90%;
         width: 1000px;
     }
@@ -325,7 +325,9 @@ fieldset{
 
     /* modifico altezza e largehzza della pagina */
     #page {
+        margin-right: auto;
         margin-left: auto;
+        border-radius: 7px;
         height: 90%;
         width: 600px;
     }
@@ -388,7 +390,9 @@ fieldset{
 
     /* modifico altezza e largehzza della pagina */
     #page {
+        margin-right: 2px;
         margin-left: 2px;
+        border-radius: 2px;
         height: 50%;
         width: 350px;
     }
