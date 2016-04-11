@@ -19,6 +19,28 @@ body{
     text-align: left;
 }
 
+/* Proprietà contenitore del corpo della pagina */
+#page{
+    margin-right: auto;
+    margin-top: 60px;
+    box-shadow: 0 40px 90px rgba(0,0,0,1);
+    background-image: url('img/sfondo-pagina.png');
+    border-radius: 7px;
+    border: 1px solid #222222; 
+    margin-bottom: 50px;
+}
+
+/* Proprietà dell'header, compreso il logo */
+header{
+    max-width: 100%;
+    margin-top: -1px;
+    background-image: url('img/sfondo_1.png');
+    background-position: top;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
 
 /* Proprietà Menu orizzontale sopra l'header */
 nav{
@@ -57,30 +79,6 @@ nav li a:hover {
 .currentpage {
     background-color: #222222;
     border-radius: 5px;
-}
-
-/* Proprietà contenitore del corpo della pagina */
-#page{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    box-shadow: 0 40px 90px rgba(0,0,0,1);
-    background-image: url('img/sfondo-pagina.png');
-    border-radius: 7px;
-    border: 1px solid #222222; 
-    margin-bottom: 50px;
-}
-
-/* Proprietà dell'header, compreso il logo */
-header{
-    max-width: 100%;
-    margin-top: -1px;
-    background-image: url('img/sfondo_1.png');
-    background-position: top;
-    background-size: contain;
-    position: relative;
-    background-repeat: no-repeat;
-
 }
 
 /* Proprietà della sidebar a sinistra del content */
@@ -258,6 +256,7 @@ fieldset{
 
     /* imposto altezza e largehzza della pagina */
     #page{
+        margin-left: auto;
         height: 90%;
         width: 1000px;
     }
@@ -326,6 +325,7 @@ fieldset{
 
     /* modifico altezza e largehzza della pagina */
     #page {
+        margin-left: auto;
         height: 90%;
         width: 600px;
     }
@@ -378,7 +378,7 @@ fieldset{
     }
 }
 
-/* modifico nuovamente tutti le sezioni delle pagine per rendere il sito responsive */
+/* modifico nuovamente tutti le sezioni delle pagine per rendere il sito responsive mobile */
 @media only screen and (max-width: 600px){
 
     /* modifico dimensione font del body */
@@ -388,6 +388,7 @@ fieldset{
 
     /* modifico altezza e largehzza della pagina */
     #page {
+        margin-left: 2px;
         height: 50%;
         width: 350px;
     }
