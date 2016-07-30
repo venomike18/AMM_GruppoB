@@ -108,6 +108,12 @@ nav li a:hover {
     border: 1px solid #C1C1C1;
 }
 
+#errore {
+    margin: 4%;
+    padding-top: 10%; 
+    height: 110px
+}
+
 /* Proprietà del footer */
 #footer {
     margin-left: 3%;

@@ -1,4 +1,13 @@
+<%-- 
+    Document   : descrizione
+    Created on : 4-lug-2016, 20.59.59
+    Author     : medas
+--%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 
 <html>
     <head>
@@ -12,42 +21,21 @@
         <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     </head>
 
+    
     <body>
+        <!-- Menu Navigazione  -->
         <div id="page">
             <nav>
                 <ul>
-                    <li class="currentpage"> <a href="descrizione.html">Descrizione</a> </li>
+                    <li class="currentpage"> <a href="./">Descrizione</a> </li>
                     <li><a href="login.html">Login</a></li>
 
                 </ul>
             </nav> 
             <header></header> 
-
-
-            <!-- Menu Navigazione  -->
-            <div id="sidebar">
-                <h2> Menu</h2>
-                <ul>
-                    <li><a href="cliente.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="descrizione.html">Descrizione</a></li>
-                    <li><a href="venditore.html">Vendi</a></li>
-                </ul>
-
-                <div id="share-buttons">
-                    <h2> Social</h2>
-                    <!-- Facebook -->
-                    <a href="http://www.facebook.com"><img src="img/facebook.png" alt="Facebook"  /></a> 
-                    <!-- Google+ -->
-                    <a href="http://www.plus.google.com"><img src="img/google.png" alt="Google"  /></a>              
-                    <!-- LinkedIn -->
-                    <a href="http://www.linkedin.com"><img src="img/linkedin.png" alt="Linkedin"  /></a>
-                    <!-- Twitter -->
-                    <a href="http://www.twitter.com"><img src="img/twitter.png" alt="Twitter"  /></a>                
-                </div>         
-            </div>
-
-
+            
+            <!-- Menu Navigazione Lato SX  -->
+            <jsp:include page="sidebar.jsp" />
 
             <!-- Prefazione Shop -->
 
@@ -209,15 +197,8 @@
                 </p>
             </div>
 
-            <!-- Fondo pagina -->
-            <div id="footer">
-                <p>Powered By Michele Medas - Mat:65089 - tutti i diritti riservati</p> 
-                <p>
-                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valido!" />
-                    </a>
-                </p>
-            </div> 
+            <!-- Footer -->
+            <jsp:include page="footer.jsp" />
         </div>
     </body>
 </html>
