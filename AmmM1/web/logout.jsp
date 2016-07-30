@@ -13,7 +13,9 @@
         <!-- Errore in caso di login errato  -->
         <div id="errore">
             <h1>ERRORE - Non sei Loggato</h1>
+            <br><img src="img/errore.jpg" alt="Errore non sei loggato"/>
         </div>
+        
     </div>
 </html>
 
